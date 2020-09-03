@@ -4547,30 +4547,6 @@
 			};
 			name = Debug;
 		};
-		6897CB47B61A909A0080E9B906DF6ABA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30C0B703B1A18B2C2B7CEECF895A891E /* RNGestureHandler.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RNGestureHandler/RNGestureHandler-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RNGestureHandler;
-				PRODUCT_NAME = RNGestureHandler;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		6A8F1ABF621F6C6C0BF844361570D854 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DECD75960F905A31274A7A277A222A1A /* React.debug.xcconfig */;
@@ -4661,29 +4637,6 @@
 			};
 			name = Debug;
 		};
-		75A026484D02020B710AE643032A307F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87C4B222615C7A444EEF5DAFBFA2DCAD /* RNGestureHandler.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RNGestureHandler/RNGestureHandler-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RNGestureHandler;
-				PRODUCT_NAME = RNGestureHandler;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		7A2EFFB44C6F969940FAF4AB6BB159C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96803AF4533402F6EB92A6E89C4CBE57 /* react-native-safe-area-context.release.xcconfig */;
@@ -4707,6 +4660,29 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		7ED129C227E1458F9AD6E874ABF00CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C4B222615C7A444EEF5DAFBFA2DCAD /* RNGestureHandler.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RNGestureHandler/RNGestureHandler-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RNGestureHandler;
+				PRODUCT_NAME = RNGestureHandler;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		8C381BDA01D3790F8E400688C15CE083 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4854,6 +4830,30 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		92B9893F18DAE6D606D7D269DF38CA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C0B703B1A18B2C2B7CEECF895A891E /* RNGestureHandler.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RNGestureHandler/RNGestureHandler-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RNGestureHandler;
+				PRODUCT_NAME = RNGestureHandler;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		9865E2F8DFFD2EA418E4932949016CE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -5175,8 +5175,8 @@
 		C71BF0ACAF9820C852857E470FFD817B /* Build configuration list for PBXNativeTarget "RNGestureHandler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75A026484D02020B710AE643032A307F /* Debug */,
-				6897CB47B61A909A0080E9B906DF6ABA /* Release */,
+				7ED129C227E1458F9AD6E874ABF00CDD /* Debug */,
+				92B9893F18DAE6D606D7D269DF38CA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

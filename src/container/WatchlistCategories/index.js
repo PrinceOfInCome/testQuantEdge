@@ -5,6 +5,7 @@ export default function WatchlistCategories({ navigation }) {
     return (
         <View style={styles.container}>
             <Headers onPressBack={() => navigation.goBack()}></Headers>
+          
         </View>
     );
 }
