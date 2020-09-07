@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Platform } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 // import CheckBox from "@react-native-community/checkbox";
 
@@ -18,7 +18,7 @@ export default function CardEditFavoruite() {
             ></TouchableOpacity>
             <View
                 style={{
-                    width: 365,
+                    width: Platform.OS == "ios" ? 365 : 335,
                     flexDirection: "row",
                     marginLeft: 8,
                     marginRight: 8,

@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 function App() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator screenOptions={navigatorOptions}>
                 <Stack.Screen
                     name="Drawers"
                     component={Drawers}
@@ -48,5 +48,24 @@ function App() {
         </NavigationContainer>
     );
 }
+const navigatorOptions = {
+    headerShown: false,
+    cardStyle: { backgroundColor: "transparent" },
+    // cardStyleInterpolator: ({ current: { progress } }) => ({
+    //     cardStyle: {
+    //         opacity: progress.interpolate({
+    //             inputRange: [0, 1],
+    //             outputRange: [0, 1],
+    //         }),
+    //     },
+    //     overlayStyle: {
+    //         opacity: progress.interpolate({
+    //             inputRange: [0, 1],
+    //             outputRange: [0, 0.5],
+    //             extrapolate: "clamp",
+    //         }),
+    //     },
+    // }),
+};
 
 export default App;

@@ -1,5 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
+import {
+    StyleSheet,
+    Text,
+    View,
+    TouchableOpacity,
+    Image,
+    ScrollView,
+    Dimensions,
+} from "react-native";
+var { width, height } = Dimensions.get("window");
 import CardWatchlistCategories from "../../component/card/cardWatchlistCategories";
 export default function UserWatchlist() {
     return (
@@ -39,7 +48,70 @@ export default function UserWatchlist() {
                 ></Image>
                 <Text style={{ color: "white", fontSize: 14 }}>Favourite</Text>
             </View>
-            <CardWatchlistCategories text="Morning Test"></CardWatchlistCategories>
+            <ScrollView>
+                <CardWatchlistCategories text="Morning Test"></CardWatchlistCategories>
+                <CardWatchlistCategories text="Top 20"></CardWatchlistCategories>
+                <CardWatchlistCategories text="Alex Test 1"></CardWatchlistCategories>
+                <CardWatchlistCategories text="Test Chart"></CardWatchlistCategories>
+                <CardWatchlistCategories text="Default View"></CardWatchlistCategories>
+                <CardWatchlistCategories text="View 2"></CardWatchlistCategories>
+                <CardWatchlistCategories text="NSX"></CardWatchlistCategories>
+            </ScrollView>
+            <View
+                style={{
+                    alignContent: "center",
+                    width: width,
+                    height: 82,
+                    justifyContent: "center",
+                    shadowColor: "#000",
+                    shadowOffset: {
+                        width: 0,
+                        height: 6,
+                    },
+                    shadowOpacity: 0.37,
+                    shadowRadius: 7.49,
+
+                    elevation: 12,
+                }}
+            >
+                <TouchableOpacity
+                    style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        borderColor: "white",
+                        borderWidth: 0.5,
+                        justifyContent: "center",
+                        width: 190,
+                        borderRadius: 5,
+                        position: "absolute",
+                        bottom: 24,
+                        alignSelf: "center",
+                    }}
+                >
+                    <View
+                        style={{
+                            justifyContent: "center",
+                            alignItems: "center",
+                            backgroundColor: "white",
+                            width: 25,
+                            height: 25,
+                            width: 25,
+                            borderRadius: 100,
+                        }}
+                    >
+                        <Text style={{ color: "#12141F" }}>+</Text>
+                    </View>
+                    <Text
+                        style={{
+                            fontSize: 12,
+                            padding: 16,
+                            color: "white",
+                        }}
+                    >
+                        Create new watchlist
+                    </Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }
@@ -47,7 +119,6 @@ export default function UserWatchlist() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-
         backgroundColor: "#12141F",
     },
 });

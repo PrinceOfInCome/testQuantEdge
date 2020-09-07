@@ -8,13 +8,15 @@ import {
     Dimensions,
 } from "react-native";
 const { width, height } = Dimensions.get("window");
-export default ({ onPressGlobe, onPressMenu }) => (
+export default ({ onPressGlobe, onPressMenu, onDrawer }) => (
     <View style={[styles.header, { backgroundColor: "#12141F" }]}>
         <View style={styles.viewheader}>
-            <Image
-                source={require("../../../image/menu.png")}
-                style={styles.iconDrawer}
-            ></Image>
+            <TouchableOpacity onPress={onDrawer}>
+                <Image
+                    source={require("../../../image/menu.png")}
+                    style={styles.iconDrawer}
+                ></Image>
+            </TouchableOpacity>
             <Text style={styles.txtWatch}>Watchlist</Text>
             <TouchableOpacity style={styles.btnGlobe} onPress={onPressGlobe}>
                 <Image

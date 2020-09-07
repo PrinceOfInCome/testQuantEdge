@@ -6,6 +6,7 @@ import {
     Dimensions,
     Image,
     TouchableOpacity,
+    ScrollView,
 } from "react-native";
 import Headers from "../../component/header/headerList";
 const { width, height } = Dimensions.get("window");
@@ -15,8 +16,9 @@ export default function Watchlist({ navigation }) {
         <View style={styles.container}>
             <View style={{ backgroundColor: "#1E212D", height: 190 }}>
                 <Headers
-                    onPressGlobe={() => navigation.navigate("Favourite")}
-                    onPressMenu={() => navigation.navigate("TopTabs")}
+                    onDrawer={() => navigation.openDrawer()}
+                    onPressGlobe={() => navigation.push("Favourite")}
+                    onPressMenu={() => navigation.push("TopTabs")}
                 ></Headers>
                 <View style={styles.viewEdit}>
                     <Text style={styles.txtEdit}>My Watchlist 1</Text>
@@ -49,7 +51,14 @@ export default function Watchlist({ navigation }) {
                     </Text>
                 </TouchableOpacity>
             </View>
-            <CardWatchList></CardWatchList>
+            <ScrollView>
+                <CardWatchList></CardWatchList>
+                <CardWatchList></CardWatchList>
+                <CardWatchList></CardWatchList>
+                <CardWatchList></CardWatchList>
+                <CardWatchList></CardWatchList>
+                <CardWatchList></CardWatchList>
+            </ScrollView>
         </View>
     );
 }
