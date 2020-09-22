@@ -3,12 +3,13 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import EditFavourite from "../../container/EditFavourite";
 import WatchlistCategories from "../../container/WatchlistCategories";
 import BottomTabNavigator from "../bottomNavigator";
-const Drawer = createDrawerNavigator();
+import {CustomDrawer} from './CustomDrawer'
+const Drawer = createDrawerNavigator({});
 
-export default function Drawers() {
+export default function Drawers({props}) {
     return (
         <Drawer.Navigator initialRouteName="BottomNavigator">
-            <Drawer.Screen
+            {/* <Drawer.Screen
                 name="Watchlist"
                 component={BottomTabNavigator}
                 options={{ headerShown: false }}
@@ -18,7 +19,7 @@ export default function Drawers() {
             <Drawer.Screen
                 name="WatchlistCategories"
                 component={WatchlistCategories}
-            />
+            /> */}
         </Drawer.Navigator>
     );
 }
